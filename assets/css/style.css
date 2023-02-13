@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+:root {
+  font-family: Rubik;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%) no-repeat;
+  height: 100%;
+  color: white;
+}
+
+main {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  display: inline;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h2 {
+  margin: 0;
+  font-size: 36px;
+}
+
+var {
+  font-style: normal;
+}
+
+span {
+  font-size: 14px;
+  color: #000b;
+}
+
+strong {
+  font-size: 16px;  
+}
+
+b {
+  padding: 5px 10px;
+  color: white;
+  background-color: #633BBC;
+  border-radius: 8px;
+}
+
+.pass-card {
+  width: 335px;
+  height: 500px;
+  border-radius: 24px;
+  overflow:  hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.pass-card > :nth-child(1) {
+  height: 35%;
+}
+
+.pass-card > :nth-child(3) {
+  height: 18%;
+}
+
+.pass-card > :nth-child(5) {
+  height: 47%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: flex-end;
+}
+
+.pass-card > :nth-child(5) > .detail-rows {
+  height: max-content;
+  grid-column: 1;
+}
+
+.pass-card > :nth-child(5) > span {
+  grid-column: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+
+section {
+  width: 80%;
+  padding: 0% 10%;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+
+}
+
+hr {
+  width: 85%;
+  margin: 0;
+  border: 0;
+  border-top: #0004 dashed 2px;
+  height: 0;
+  background-color: white;
+}
+
+.detail-rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.time-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.airplane-icon {
+  width: 28px;
+}
+
+.detail-rows > header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.qr-code {
+  grid-row: 1/4; 
+  grid-column: 2;
+  text-align: center;
+}
+
+.qr-code > img {
+  width: 140px;
+}
+
+p {
+  text-align: center;
+  word-wrap: break-word;
+  width: 260px;
+  font-size: 14px;
+  color: #ffffff80;
+}
